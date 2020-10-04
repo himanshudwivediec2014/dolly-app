@@ -1,0 +1,14 @@
+<div class="dolly-one-container">
+  <div class="tab-wrapper">
+    <app-dolly-tabs 
+    [tabList]="tabsList"
+    [selectedTabId]="selectedTabId"
+    (selectionChange)="tabSelected($event)"
+    ></app-dolly-tabs>
+  </div>
+
+  <div class="tab-content-wrapper">
+    <!-- <router-outlet></router-outlet> -->
+    <app-awb-one></app-awb-one>
+  </div>
+</div>

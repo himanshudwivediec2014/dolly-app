@@ -1,0 +1,32 @@
+<div class="header-wrapper">
+  <div class="header-container">
+    <div class="logo-container">
+      <img class="logo" src="../../../../../assets/images/logo.png" alt="dnata.png">
+      <h3 class="logo-heading">
+        Singapore Cool <span class="custom-logo-heading">Dolly</span>
+      </h3>
+    </div>
+
+    <div class="actions-container">
+      <p>Track Another Dolly</p>
+      <div class="track-dolly">
+        <input type="text" placeholder="BOOKING ID">
+        <button>Track <span class="custom-displayable-text">Dolly</span></button>
+      </div>
+      <button class="book-new">Book <span class="custom-displayable-text">Your</span> Dolly</button>
+    </div>
+  </div>
+
+  <div class="content-wrapper">
+    <div class="top-nav-section">
+        <div class="track-dolly" *ngIf="isVisible">
+          <input type="text" placeholder="BOOKING ID">
+          <button>Track <span class="custom-displayable-text">Dolly</span></button>
+        </div>
+    
+        <div class="booking-id-section">
+          <h3 class="booking-id-label">Booking ID <span class="booking-id">#RA123456789CN</span></h3>
+        </div>
+    </div>
+  </div>
+</div>

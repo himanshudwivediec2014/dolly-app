@@ -1,0 +1,26 @@
+.home-container {
+    .dolly-content-wrapper {
+        margin-top: -53px;
+        .tab-wrapper {
+            padding: 8px 45px;
+        }
+
+        .tab-content-wrapper {
+            padding: 15px 45px 8px;
+        }
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .home-container {
+        .dolly-content-wrapper {
+            .tab-wrapper {
+                padding: 8px 20px;
+            }
+
+            .tab-content-wrapper {
+                padding: 15px 20px 8px;
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+<div class="home-container">
+    <div class="header">
+        <app-header></app-header>
+    </div>
+
+    <div class="dolly-content-wrapper">
+        <div class="tab-wrapper">
+            <app-tab
+             [tabList]="tabsList" 
+             [selectedTabId]="selectedTabId"
+             (selectionChange)="tabChanged($event)"
+             ></app-tab>
+        </div>
+
+        <div class="tab-content-wrapper">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

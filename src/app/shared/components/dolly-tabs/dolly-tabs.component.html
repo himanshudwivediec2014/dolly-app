@@ -1,0 +1,21 @@
+<div class="custom_nav_tab" >
+    <ul class="navigation navigation-tabs" role="tablist">
+      <ng-container *ngFor="let tabItem of tabList">
+        <li
+          class="navigation-item"
+          [attr.id]="tabItem.id"
+          [ngClass]="selectedTabId === tabItem.id ? 'active' : ''"
+          (click)="selectTab(tabItem.id)"
+        >
+          <a
+            class="navigation-link"
+            data-toggle="tab"
+            role="tab"
+            aria-controls="home"
+            aria-selected="true"
+            >{{ tabItem.displayName }}</a
+          >
+        </li>
+      </ng-container>
+    </ul>
+  </div>

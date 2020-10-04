@@ -1,0 +1,40 @@
+.custom_nav_tab {
+    .navigation-tabs {
+        display: flex;
+        margin: 0px;
+        padding: 0px;
+
+        .navigation-item {
+            cursor: pointer;
+            padding: 13px 13px 11px 13px;
+            list-style-type: none;
+
+            &.active {
+                background-color: #ffffff;
+            }
+
+            .navigation-item-logo {
+                height: 17px;
+                width: 21px;
+                margin-right: 12px;
+            }
+
+            .navigation-link {
+                vertical-align: super;
+                padding: 8px 0px;
+                height: 37px;
+                font-size: 13px;
+                font-weight: 400;
+                color: #7990a4;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+
+  
+
